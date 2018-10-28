@@ -33,23 +33,23 @@ Implementation of the project is final application that is built with java. In m
 5.2 To run the client on or remote host change ALL connection URL string that are in com.ChittyBankService.Client to server address (@TODO move this to config file **\src\main\resources\application-client.properties**)
 5.2.1 Run **com.ChittyBankService.Client.Main** to launch the client desktop application
 
-#Building The JAR
+# Building The JAR
 
 In order to build JAR's there's two ways. Both has it's pros and cons
-# Building the Hacky way (easy way)
+## Building the Hacky way (easy way)
 
 1. Comment the main class in **com.ChittyBankService.Client.Main**
 2. Maven Build. This will create Server JAR at target folder ( name could be different ). Move whole folder somewhere safe
 3. Uncomment the main class in **com.ChittyBankService.Client.Main** and comment main class in **com.ChittyBankService.ChittyChittyBankApplcation**
 4. Maven build. This will create Client JAR at target folder ( name could be different ). Move whole folder somewhere safe
 
-# Building the correct way (hard) (with Maven)
+## Building the correct way (hard) (with Maven)
 
 1. Configure **pom.xml** to build two JAR files with different main entries (**com.ChittyBankService.Client.Main** and **com.ChittyBankService.ChittyChittyBankApplcation** ). 
 2. Maven Build.
 
 # Some considerations 
-* There's bugs in client.
+* There're bugs in client.
 * I forgot.
 
 Pull request are welcome.
